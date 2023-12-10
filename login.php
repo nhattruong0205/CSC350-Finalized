@@ -37,7 +37,7 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="css/login-register.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="css/button.css"> <!-- Link to your external CSS file -->
 </head>
 
 <body>
@@ -53,7 +53,7 @@ mysqli_close($conn);
         <label for="password">Password:</label>
         <input type="password" id="password" name="password"><br><br>
 
-        <input type="submit" value="Login"><br>
+        <input type="submit" class="login" value="Login"><br>
 
         <a href="landingFiles/landing.php" class="back-button">Back</a>
 

@@ -66,7 +66,7 @@ mysqli_close($conn);
 
 <head>
   <title>User Signup</title>
-  <link rel="stylesheet" href="css/login-register.css"> <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="css/button.css"> <!-- Link to your external CSS file -->
 </head>
 
 <body>
