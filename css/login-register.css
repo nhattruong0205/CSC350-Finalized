@@ -1,0 +1,32 @@
+input[type="submit"] {
+  background-color: #5271FF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px; /* Increased padding for better appearance */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4058ca;
+}
+
+.back-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0; /* Center the button horizontally */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ccc;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #999;
+}
