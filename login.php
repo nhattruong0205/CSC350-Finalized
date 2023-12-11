@@ -38,25 +38,28 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="css/button.css"> <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your external CSS file -->
 </head>
 
 <body>
-
-    <div class="header">
+    <div class="fade-in-image" style="text-align: center;">
         <img src="image/kenjonha-logo.png" alt="logo" style="width:50%;">
     </div>
-    <h2>Login</h2>
-    <form action="login.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br><br>
+    <div style="text-align: center;">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
 
-        <input type="submit" class="login" value="Login"><br>
+            <input type="submit" class="login" value="Login"><br>
+            <a href="landingFiles/landing.php" class="back-button">Back</a>
 
-        <a href="landingFiles/landing.php" class="back-button">Back</a>
+    </div>
 
+    </div>
 </body>
 
 </html>

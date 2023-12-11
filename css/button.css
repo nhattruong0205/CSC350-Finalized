@@ -1,22 +1,22 @@
-/* Styles for the buttons */
-.register-button,
-.login-button {
+.register,
+.login,.back-button {
   display: inline-block;
   padding: 10px 20px;
-  margin-right: 10px;
-  background-color: #3498db;
-  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #ccc;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  color: #000;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-right: 20px 10px; 
+  margin-bottom: 20px;
 }
 
-/* Hover effect for Register button */
-.register-button:hover {
-  background-color: #2980b9;
+.register:hover,
+.login:hover,.back-button:hover {
+  background-color: #999;
 }
 
-/* Hover effect for Login button */
-.login-button:hover {
-  background-color: #27ae60;
-}
+
+

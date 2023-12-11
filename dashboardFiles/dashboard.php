@@ -17,6 +17,12 @@ if (isset($_SESSION['username'])) {
   <!-- Content for the Dashboard section -->
   <h2>Welcome, <?php echo $username; ?>!</h2>
   <h2>Your role is: <?php echo $role; ?></h2>
+  <h2>This is your dashboard where you can
+    <br> 1. Modify you information
+    <br> 2. Calculate your Payroll
+    <br> 3. Viewing your incoming salary and exercise them
+    <br> 4. View your balance
+  </h2>
 
   <!-- Display other user details here -->
 <?php

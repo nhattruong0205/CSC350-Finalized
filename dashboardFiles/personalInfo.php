@@ -57,32 +57,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Close the database connection
 mysqli_close($conn);
 ?>
+<!DOCTYPE html>
+<html>
 
-<form action="personalInfo.php" method="post">
-    <label for="firstName">First name:</label><br>
-    <input type="text" id="firstName" name="firstName" value="<?php echo $firstName; ?>" disabled><br><br>
+<head>
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="../css/button.css"> <!-- Link to your external CSS file -->
+</head>
 
-    <label for="lastName">Last name:</label><br>
-    <input type="text" id="lastName" name="lastName" value="<?php echo $lastName; ?>" disabled><br><br>
+<body>
+    <div style="text-align: center;">
+
+        <form action="personalInfo.php" method="post">
+            <br>
+            <label for="firstName">First name:</label><br>
+            <input type="text" id="firstName" name="firstName" value="<?php echo $firstName; ?>" disabled><br><br>
+
+            <label for="lastName">Last name:</label><br>
+            <input type="text" id="lastName" name="lastName" value="<?php echo $lastName; ?>" disabled><br><br>
 
 
-    <label for="dob">Date of Birth:</label><br>
-    <input type="date" id="dob" name="dob" value="<?php echo $dob; ?>" disabled><br><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" value="<?php echo $dob; ?>" disabled><br><br>
 
-    <label for="gender">Gender:</label><br>
-    <input type="radio" id="male" name="gender" value="male" <?php echo ($gender === 'Male') ? 'checked disabled' : 'disabled'; ?>>
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female" <?php echo ($gender === 'Female') ? 'checked disabled' : 'disabled'; ?>>
-    <label for="female">Female</label><br><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" <?php echo ($gender === 'Male') ? 'checked disabled' : 'disabled'; ?>>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" <?php echo ($gender === 'Female') ? 'checked disabled' : 'disabled'; ?>>
+            <label for="female">Female</label><br><br>
 
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" value="<?php echo $phone; ?>" disabled><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" value="<?php echo $phone; ?>" disabled><br><br>
 
-    <input type="button" id="editBtn" value="Edit" onclick="redirectToEditPage()">
-</form>
+            <input type="button" id="editBtn" value="Edit" onclick="redirectToEditPage()">
+        </form>
+        <br>
+        <a href="dashboard.php" class="back-button">Back</a>
+    </div>
 
-<a href="dashboard.php" class="back-button">Back</a>
+    <body>
 
+</html>
 
 <script>
     function redirectToEditPage() {
