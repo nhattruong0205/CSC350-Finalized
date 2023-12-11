@@ -22,11 +22,12 @@
           account. <br />Edit their own account information. <br />Select
           their type of payment either direct or check.
         </p>
+        <a href="../register.php" class="register-button">Register</a>
+        <a href="../login.php" class="login-button">Log in</a>
       </div>
-      <button class="register"><a href="../register.php">Register</a></button>
-      <button class="login"><a href="../login.php">Log in</a></button>
     </div>
   </div>
+
 </body>
 
 </html>
